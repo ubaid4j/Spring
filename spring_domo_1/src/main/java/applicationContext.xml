@@ -10,7 +10,7 @@
 	
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.ubaid.springApp.TrackCoach">
+    	class="com.ubaid.springApp.CricketCoach">
     </bean>
 
 </beans>
