@@ -12,6 +12,11 @@
     <bean id="myCoach"
     	class="com.ubaid.springApp.CricketCoach">
     </bean>
+    
+    <bean id="fortuneService"
+    	class="com.ubaid.springApp.HappyFortuneService">
+    	
+    </bean>
 
 </beans>
 
