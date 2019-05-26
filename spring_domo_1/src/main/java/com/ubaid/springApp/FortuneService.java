@@ -2,5 +2,5 @@ package com.ubaid.springApp;
 
 public interface FortuneService
 {
-	public String getFortuneService();
+	public String getFortune();
 }

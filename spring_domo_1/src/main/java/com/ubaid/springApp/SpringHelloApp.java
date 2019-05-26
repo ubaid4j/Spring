@@ -14,8 +14,11 @@ public class SpringHelloApp
 		//retrieve spring bean from container 
 		Coach coach = context.getBean("myCoach", Coach.class);
 		
-		//call methods on bean
+		//call methods on bean (daily work out)
 		System.out.println(coach.getDailyWorkOut());
+		
+		//get fortune service
+		System.out.println(coach.getDailyFortune());
 		
 		//close the context
 		context.close();

@@ -8,4 +8,9 @@ public class CricketCoach implements Coach {
 		return "Practice on Bowling and Fielding";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		return null;
+	}
+
 }
