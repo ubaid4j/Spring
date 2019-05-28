@@ -1,21 +1,21 @@
 package com.ubaid.springApp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach
 {
-	@Autowired
 	private FortuneService fortuneService;
 	
-/*
+
 	@Autowired
-	public TennisCoach(FortuneService theFortuneService)
+	public TennisCoach(@Qualifier("randomFortune") FortuneService theFortuneService)
 	{
 		fortuneService = theFortuneService;
 	}
-*/
+
 	public TennisCoach()
 	{
 		System.out.println(">> TennisCoach: inside Constructor");

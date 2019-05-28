@@ -9,6 +9,9 @@
 
 	<!-- enable scanning components from the package  -->
 	<context:component-scan base-package="com.ubaid.springApp"></context:component-scan>
+	
+	<!-- reading property file -->
+	<context:property-placeholder location="classpath:sport.properties"/>
 
 </beans>
 
