@@ -19,6 +19,8 @@ public class ActivityThree
 		
 		System.out.println("\nMemory location of Caoch1: " + coach1);
 		System.out.println("\nMemory location of Coach2: " + coach2);
+		
+		context.close();
 	}
 
 }
