@@ -7,42 +7,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- enable scanning components from the package  -->
+	<context:component-scan base-package="com.ubaid.springApp"></context:component-scan>
 
-	<context:property-placeholder location="classpath:sport.properties"/>
-	
-    <!-- Define your beans here -->   
-    <bean id="fortuneService"
-    	class="com.ubaid.springApp.HappyFortuneService">
-    </bean>
-
-
-    <bean id="myCoach"
-    	class="com.ubaid.springApp.TrackCoach">
-    	
-    	<!-- constructor injection -->
-    	<constructor-arg ref="fortuneService"/>
-    </bean>
-
-    <bean id="randomFortuneService"
-    	class="com.ubaid.springApp.RandomFortuneService">
-    	
-    	<property name="fortuneArray" value='${randomfortune.array}'/>
-    	
-    </bean>
-
-
-	<bean id="cricketCoach"
-		class="com.ubaid.springApp.CricketCoach">
-		
-		<!-- set up setter injection -->
-		<property name="fortuneService" ref="randomFortuneService"/>
-		<property name="emailAddress" value="${foo.email}"/>
-		<property name="team" value="${foo.team}"/>		
-	</bean>
-    
-    
-    
-    
 </beans>
 
 
