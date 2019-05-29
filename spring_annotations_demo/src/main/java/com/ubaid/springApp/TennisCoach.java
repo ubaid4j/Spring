@@ -1,15 +1,32 @@
 package com.ubaid.springApp;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("singleton")
 public class TennisCoach implements Coach
 {
 	private FortuneService fortuneService;
 	
 
+	@PostConstruct
+	public void init()
+	{
+		System.out.println("\nTennisCoach: inside init method");
+	}
+	
+	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("\nTennisCoach: inside destroy method");
+	}
+	
 	@Autowired
 	public TennisCoach(@Qualifier("randomFortune") FortuneService theFortuneService)
 	{
@@ -21,14 +38,6 @@ public class TennisCoach implements Coach
 		System.out.println(">> TennisCoach: inside Constructor");
 	}
 
-/*
-	@Autowired
-	public void doSomeCrazyThing(FortuneService fortuneService)
-	{
-		System.out.println(">> TennisCoach: inside doSomeCrazyThing Method ");
-		this.fortuneService = fortuneService;
-	}
-*/	
 	@Override
 	public String getDailyWorkOut()
 	{

@@ -27,3 +27,13 @@ When Spring creates the beans it follows this general process
 so, our data array is initialized with a, b, c but their values are not set at this time. 
 So, we want to construct our array after [the values have been set in the a, b, and c]
 for this, we used @PostConstruct
+
+
+----------------------------------Scope--------------------------------------------------
+1. singleton -default
+2. prototype
+
+
+----------------------------------Life Cycle----------------------------------------------
+1. @PostConstruct [INIT method seems like call after constructor and dependency injection]
+2. @PreDestory [destroy method] it will not called if scope is prototype

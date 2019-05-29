@@ -28,11 +28,11 @@ public class RandomFortune implements FortuneService
 */
 	
 	public RandomFortune()
-	{
-		
+	{		
 		assert(data != null);
 	}
 	
+	@PostConstruct
 	public void doPostConstruct()
 	{
 		data = new String[3];
