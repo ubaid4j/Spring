@@ -5,7 +5,7 @@
 	</head>
 	
 	<body>
-		<form method="get" action="confirmation">
+		<form method="get" action="confirmationVersionTwo">
 			<input type="text" name="studentN" placeholder="What is your name?">
 			<input type="submit">
 		</form>

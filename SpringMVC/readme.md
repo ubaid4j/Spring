@@ -31,3 +31,8 @@
 	</ol>
 	<li>The inputs in the form will go automatically goes in another page using ${param.inputName}</li>
 </ol>
+
+<h3>--------Model-------------</h3>
+<ol>
+	<li>To add data in model we will have method annotate with <strong>@RequestMapping</strong> and having signature (HttpServletRequest and Model) and it will return the string refer to the view file</li>
+</ol>

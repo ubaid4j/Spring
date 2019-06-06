@@ -7,5 +7,7 @@
 	<body>
 		<p>Welcome</p>
 		<p>Student Name: ${param.studentN}</p>
+		<br></br>
+		<p>Message: ${message}</p>
 	</body>
 </html>
