@@ -36,3 +36,12 @@
 <ol>
 	<li>To add data in model we will have method annotate with <strong>@RequestMapping</strong> and having signature (HttpServletRequest and Model) and it will return the string refer to the view file</li>
 </ol>
+
+
+<h3>-------Resource Mapping------</h3>
+<h5>-------CSS, JS and Images------</h5>
+<ol>
+	<li><strong>mvc:resources mapping="/resources/**" location="/resources/"</strong>  add this in servlet.xml file</li>
+	<li>and</li>
+	<li>this will be our base path <strong>${pageContext.request.contextPath }/resources/</strong> which we can add in <strong>href</strong> or <strong>src</strong> </li>
+</ol>
