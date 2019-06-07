@@ -45,3 +45,9 @@
 	<li>and</li>
 	<li>this will be our base path <strong>${pageContext.request.contextPath }/resources/</strong> which we can add in <strong>href</strong> or <strong>src</strong> </li>
 </ol>
+
+<h3>--------------------------RequestParam----------------------</h3>
+<ol>
+	<li>RequestParam is annotation which is inside the method arguments</li>
+	<li>It automatically bind the input from the form to the parameter in the method</li>
+</ol>

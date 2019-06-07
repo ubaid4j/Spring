@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController
@@ -33,6 +34,20 @@ public class HelloWorldController
 		//adding in model
 		model.addAttribute("message", name);
 		
+		return "confirmation";
+	}
+	
+	@RequestMapping("confirmationVersionThree")
+	public String capatalizeTheMessageVersionTwo
+	(@RequestParam("studentN") String name,
+			Model model)
+	{
+		//capitalize 
+		name = "Hello G Assalam o Alaikum! ".toUpperCase() + name.toUpperCase();
+		
+		//adding in model
+		model.addAttribute("message", name);
+				
 		return "confirmation";
 	}
 }
