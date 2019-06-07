@@ -51,3 +51,13 @@
 	<li>RequestParam is annotation which is inside the method arguments</li>
 	<li>It automatically bind the input from the form to the parameter in the method</li>
 </ol>
+
+<h3>------------------------Relative Mapping--------------------</h3>
+<ol>
+	<li>So, we can annotate a controller class with @RequestMapping and then its methods with the same annotations</li>
+	<ol><strong>Example</strong>
+		<li>Let we have class annotate with @RequestMapping("hello") and </li>
+		<li>its one of method with @RequestMappings("showForm") then </li>
+		<li>the path for showForm will be <strong>/hello/showForm/</strong></li>
+	</ol>
+</ol>
