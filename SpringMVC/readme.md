@@ -61,3 +61,23 @@
 		<li>the path for showForm will be <strong>/hello/showForm/</strong></li>
 	</ol>
 </ol>
+
+<h3>-----------------------ModelAttribute-----------------------</h3>
+<ol>
+	<li>
+		modelAttribute is used as attribute in the form:form tag 
+	</li>
+	<li>
+		and it used as annotation as an argument in the under the @RequestMapping annotation 
+	</li>
+	<li>
+		to bind an java object from a view from to model 
+	</li>
+	<ol>
+		Procedure:
+		<li>We will bind form with an object which we created as POJO. <strong>see the student-form.jsp</strong></li>
+		<li>we will get this object using @ModelAttribute("name_of_object") annotation</li>
+		<li>the argument in the @ModelAttribute annotation and the name of modelAttribute attribute must be same</li>
+	</ol>
+	
+</ol>
