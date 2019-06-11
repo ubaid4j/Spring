@@ -78,6 +78,18 @@
 		<li>We will bind form with an object which we created as POJO. <strong>see the student-form.jsp</strong></li>
 		<li>we will get this object using @ModelAttribute("name_of_object") annotation</li>
 		<li>the argument in the @ModelAttribute annotation and the name of modelAttribute attribute must be same</li>
-	</ol>
-	
+	</ol>	
 </ol>
+<h3>----------------Data binding with drop down-------------------</h3>
+<ol>
+	<li>
+		we use from:select and inner form:option and assign the path of form:select as before
+	</li>
+	<li>
+		to populate data from java classes then we use form:options and attribute items 
+	</li>
+	<li>
+		see student-form.jsp for reference 
+	</li>
+</ol>
+

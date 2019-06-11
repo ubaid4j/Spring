@@ -3,6 +3,8 @@ package com.ubaid.springMVC.mvc;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -13,12 +15,25 @@ public class Student
 	private String lastName;
 	private String country;
 	private HashMap<String, String> countries;
+
+	@Value("${i1.labels}")
+	private String[] labels;
+	@Value("${i1.countries}")
+	private String[] coutrs;
+	
+	@PostConstruct
+	public void init()
+	{
+		int size = labels.length;
+		for(int i = 0; i < size; i++)
+		{
+			countries.put(labels[i], coutrs[i]);
+		}
+	}
 	
 	public Student()
 	{
 		countries = new LinkedHashMap<String, String>();
-		countries.put("PK", "Pakistan");
-		countries.put("SRA", "Saudia Arabia");
 	}
 
 	public String getFirstName() {
