@@ -92,4 +92,16 @@
 		see student-form.jsp for reference 
 	</li>
 </ol>
-
+<h3>--------------Data binding with radio buttons------------------</h3>
+<ol>
+	<li>we use form:radiobutton for one radio button and its attribute are path and value</li>
+	<li>we use group radio buttons using one path in the radio buttons </li>
+	<li>the second option is to use form:radiobuttons and attribute items to populate it and its path</li>
+</ol>
+<h3>------------Data binding with check boxes---------------------</h3>
+<ol>
+	<li>the tag is form:checkbox and attribute is same path but the field referred to java class should be collection (for more information check student-form)</li>
+	<li>we have used <strong>JSTL tag library in the student-confirmation.jsp file</strong></li>
+	<li>JSTL tag library have several scriptlets to write iteration conditional etc </li>
+	<li>we can create the same check boxes using form:checkboxes and populate it using items attributes reffered to any collection, check student-form.jsp and student.java</li>
+</ol>
