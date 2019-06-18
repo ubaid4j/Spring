@@ -15,7 +15,9 @@
 		<input type="button" onclick="changeColor()" value="Press to change Color">
 		
 		<br>
-		<a href="student/showForm">Show Form</a>
+		<a href="student/showForm">Show Student Form</a>
+		<br>
+		<a href="customer/showForm">Show Customer Form</a>
 	</body>
 	
 </html>

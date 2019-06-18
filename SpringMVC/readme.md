@@ -105,3 +105,19 @@
 	<li>JSTL tag library have several scriptlets to write iteration conditional etc </li>
 	<li>we can create the same check boxes using form:checkboxes and populate it using items attributes reffered to any collection, check student-form.jsp and student.java</li>
 </ol>
+<h3>---------Data Validation using @NotNull(message="mes") @Size(min="", message="") -------------------------------------</h3>
+<ol>
+	<li>@NotNull annotation is used for a field which is supposed to be validate</li>
+	<li>When we used some validating annotation then for this field, we have to make form:errors tag to </li>
+	<li>show the message when validation got failed in the view</li>
+	<li>In the controller class, we will make a method having two parameters @Valid @ModelAttribute and BindingResult</li>\
+	<li><strong>For more detail, check, customer-form.jsp, Customer.Java, Customer-Controller.java</strong></li>
+</ol>
+
+<h3>--------------------@InitBinder------------------------------------</h3>
+<ol>
+	<li>@InitBinder annotation is used to pre-process the web request in the controller class</li>
+	<li>the method signature is WebDataBinder only</li>
+	<li>Here, we created an editor StringTrimmerEditor and register with dataBinder</li>
+	<li>to trim the all the string which are being validated</li>
+</ol>
