@@ -28,6 +28,16 @@
 			<!-- will be return from getLastName() method -->
 			Last Name*: <form:input path="lastName"/> <form:errors path="lastName" class="error"></form:errors>
 			
+			<!-- text field which is bind to free passes (integer) and will -->
+			<!-- show error if input exceeds from the given range -->
+			<br><br>
+			Free Passes: <form:input path="freePasses"/> <form:errors path="freePasses" class="error"></form:errors>
+			
+			<!-- this field is bind to postal address -->
+			<!-- postal address contain 5 chars/digits -->
+			<br><br>
+			Postal Address: <form:input path="postalAddress"/> <form:errors path="postalAddress" class="error"></form:errors>
+			
 			<br><br>
 			<input type="submit">
 		</form:form>

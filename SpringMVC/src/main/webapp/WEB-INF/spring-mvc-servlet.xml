@@ -26,6 +26,13 @@
 	
 	<!-- Resource Mapping -->
 	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources> 
+	
+	<!-- Special Bean for loading messages.properties which is in the resource folder -->
+	<bean
+		id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages"></property>
+	</bean>
 
 </beans>
 

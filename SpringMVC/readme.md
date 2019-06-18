@@ -110,7 +110,7 @@
 	<li>@NotNull annotation is used for a field which is supposed to be validate</li>
 	<li>When we used some validating annotation then for this field, we have to make form:errors tag to </li>
 	<li>show the message when validation got failed in the view</li>
-	<li>In the controller class, we will make a method having two parameters @Valid @ModelAttribute and BindingResult</li>\
+	<li>In the controller class, we will make a method having two parameters @Valid @ModelAttribute and BindingResult</li>
 	<li><strong>For more detail, check, customer-form.jsp, Customer.Java, Customer-Controller.java</strong></li>
 </ol>
 
@@ -121,3 +121,17 @@
 	<li>Here, we created an editor StringTrimmerEditor and register with dataBinder</li>
 	<li>to trim the all the string which are being validated</li>
 </ol>
+
+<h3>--------------------@Min @Max @NotNull @Pattern--------------------</h3>
+<ol>
+	<li>See <strong>Customer.Java CostumerController.java and Customer-form.jsp</strong></li>
+</ol>
+
+<h3>--------------------Custom Error Messages (messages.properties) --------</h3>
+<ol>
+	<li>First create a properties file in the resource folder</li>
+	<li>Create a special bean in the servlet.xml file</li>
+	<li>see <strong>servlet.xml special bean</strong></li>
+</ol>
+
+

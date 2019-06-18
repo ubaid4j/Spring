@@ -20,11 +20,15 @@ public class CustomerController
 	@InitBinder
 	public void binder(WebDataBinder dataBinder)
 	{
+		
+		
 		//editor which trim the string
 		StringTrimmerEditor editor = new StringTrimmerEditor(true);
 		
 		//registering the editor with data binder
 		dataBinder.registerCustomEditor(String.class, editor);
+		
+
 	}
 	
 	
@@ -45,7 +49,8 @@ public class CustomerController
 	@RequestMapping("/processForm")
 	public String processForm(@Valid @ModelAttribute("customer") Customer customer, BindingResult result)
 	{
-		System.out.println("|" + customer.getLastName() + "|");
+		
+		System.out.println("Binding Result: " + result);
 		
 		/**
 		 * if rules are violated then if will return customer-form 
