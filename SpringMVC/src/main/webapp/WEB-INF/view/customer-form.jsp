@@ -38,6 +38,10 @@
 			<br><br>
 			Postal Address: <form:input path="postalAddress"/> <form:errors path="postalAddress" class="error"></form:errors>
 			
+			<!-- this field is bind to courseCode-->
+			<br><br>
+			Course Code: <form:input path="courseCode"/> <form:errors path="courseCode" class="error"></form:errors>
+			
 			<br><br>
 			<input type="submit">
 		</form:form>

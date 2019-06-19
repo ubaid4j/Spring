@@ -133,5 +133,10 @@
 	<li>Create a special bean in the servlet.xml file</li>
 	<li>see <strong>servlet.xml special bean</strong></li>
 </ol>
+<h3>-------------------Custom Validating Rules--------------------------------</h3>
+<ol>
+	<li>First Created <strong>annotation see CourseCode</strong> annotation at mvc.annotation package</li>
+	<li>Then we have created its constrain validater <strong>see CourseCodeValidator</strong> in the same package</li>
+</ol>
 
 
