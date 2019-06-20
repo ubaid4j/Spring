@@ -2,6 +2,11 @@ package com.ubaid.hibernate.jdbc;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
+/**
+ * simple create connection with database using data source
+ * @author UbaidurRehman
+ *
+ */
 public class ConnectionTest
 {
 	public static void main(String [] args)

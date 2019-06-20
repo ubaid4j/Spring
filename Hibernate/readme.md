@@ -23,3 +23,35 @@
 	<li>commit the transaction</li>
 	<li>close the transaction</li>
 </ol>
+
+
+<h3 align="center">Reading object</h3>
+<ol>
+	see <strong>com.ubaid.hibernate.ReadingDemo.ReadingDemo.java</strong>
+	<li>use session.get(T, Serializeable) to read object from the database</li>	
+</ol>
+
+
+<h3 align="center">Querying object</h3>
+<ol>
+	see <strong>com.ubaid.hibernate.queryObject.QueryObjectDemo.java</strong>
+	<li>use session.createQuery(query, type).getResultList to get list of type</li>	
+</ol>
+
+
+<h3 align="center">Updating Objects</h3>
+<ol>
+	see <strong>com.ubaid.hibernate.UpdateObject.Demo.java</strong>
+	<li>get persistent instance using session.get(T, id) method and set value</li>
+	<li>or</li>
+	<li>create query and execute update</li>	
+</ol>
+
+<h3 align="center">Deleting Objects</h3>
+<ol>
+	see <strong>com.ubaid.hibernate.deleteObject.Demo.java</strong>
+	<li>get persistent instance using session.get(T, id) method and delete using session.set(object)</li>
+	<li>or</li>
+	<li>create query and execute update</li>	
+</ol>
+
