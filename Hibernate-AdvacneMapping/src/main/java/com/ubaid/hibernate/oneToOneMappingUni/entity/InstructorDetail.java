@@ -1,4 +1,4 @@
-package com.ubaid.hibernate.oneToOneMapping.entity;
+package com.ubaid.hibernate.oneToOneMappingUni.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
