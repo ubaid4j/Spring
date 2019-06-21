@@ -18,7 +18,7 @@
 			<li>When we delete the object of Instructor detail, then it will delete Instructor too</li>
 			<li>To delete only Instructor detail, we will change the cascade type of join column field in @OneToOne annotation</li>
 		</ol>
-	</li>
-
-	
+	</li>	
 </ol>
+<h3 align="center">One to Many Mapping Bidirectional</h3>
+<h5></h5>
