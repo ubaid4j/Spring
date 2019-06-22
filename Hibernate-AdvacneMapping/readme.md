@@ -10,6 +10,7 @@
 			<li><strong>@OneToOne(strategy)</strong>: we mention cascade strategies on the same field</li>
 		</ol>
 	</li>
+	<br><br>
 	<strong>One to One Mapping BiDirectional: com.ubaid.hibernate.oneTooneMappingBi</strong>
 	<li>To make BiDirectional we make: 
 		<ol>
@@ -21,4 +22,13 @@
 	</li>	
 </ol>
 <h3 align="center">One to Many Mapping Bidirectional</h3>
-<h5></h5>
+<h5>com.ubaid.hibernate.oneToManyBi</h5>
+<ol>
+	Here we use: 
+	<li><strong>@ManyToOne(cascade)</strong>: use in the class which is many for one type many courses to one instructor</li>
+	<li><strong>@OneToMany(mappedby, cascade)</strong>: use in the class which is one for many (instructor to courses)</li>
+	<li><strong>mappedBy</strong>: this parameter is used when we want bidirections in our classes</li>
+	
+<ol>
+
+
