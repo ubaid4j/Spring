@@ -14,7 +14,7 @@
 <h3>Problems on Lazy Fetching</h3>
 <p>
 	<ol>
-		<li>If we close our session, then getting mapped table, will raise exception</li>
+		<li>After we close our session, then getting mapped table, will raise exception</li>
 		<li>We have two options to resolve this:</li>
 		<ol>
 			<li>The the respected mapped table before closing the session</li>

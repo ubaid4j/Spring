@@ -29,6 +29,14 @@
 	<li><strong>@OneToMany(mappedby, cascade)</strong>: use in the class which is one for many (instructor to courses)</li>
 	<li><strong>mappedBy</strong>: this parameter is used when we want bidirections in our classes</li>
 	
+</ol>
+<h3 align="center">One to Many Mapping Unidirectional</h3>
+<h5>com.ubaid.hibernate.oneToManyUni</h5>
+<ol>
+	Here we use: 
+	<li>Do not use mapped by</li>
+	<li>do not create instance in the mapped table</li>
+	<li>using <strong>@JoinColumn</strong> on the collections and give it the actual name of foreign key column</li>	
 <ol>
 
 
