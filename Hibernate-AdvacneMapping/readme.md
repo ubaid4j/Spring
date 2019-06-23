@@ -38,5 +38,17 @@
 	<li>do not create instance in the mapped table</li>
 	<li>using <strong>@JoinColumn</strong> on the collections and give it the actual name of foreign key column</li>	
 <ol>
+<h3 align="center">Many to Many Mapping</h3>
+<h5>com.ubaid.hibernate.manyToMany</h5>
+<ol>
+	Here we use: 
+	<li><strong>@JoinTable(name, joinColumn=@JoinColum(name), inversejoinColumn=@JoinColumn(name))</strong>: we mention the name of join table, and then its foreign keys [inverse will be another entity foreign key</li>
+	
+</ol>
+<br><br><br>
+<h2 align="center">Notes: (Observation)</h2>
+<ol>
+	<li>We don't need to save an entity when we have all cascade and it is unidirectional [optional]</li>
+</ol>
 
 
