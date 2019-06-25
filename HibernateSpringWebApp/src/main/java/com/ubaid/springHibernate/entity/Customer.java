@@ -9,6 +9,7 @@ import javax.persistence.Table;
 
 /**
  * This class is mapped with customer table
+ * @ORM 
  * @author UbaidurRehman
  *
  */
@@ -79,6 +80,4 @@ public class Customer
 	public String toString() {
 		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-	
-	
 }

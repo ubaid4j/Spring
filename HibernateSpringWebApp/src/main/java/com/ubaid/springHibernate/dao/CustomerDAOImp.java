@@ -7,7 +7,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.ubaid.springHibernate.entity.Customer;
 
@@ -18,6 +17,8 @@ import com.ubaid.springHibernate.entity.Customer;
  *              
  * @Transactional automatically start and end the transaction 
  *                no need of session.beginTransaction and transaction.commit
+ *                
+ * @Autowired dependency injection
  *                
  * 
  * @author UbaidurRehman
@@ -34,7 +35,6 @@ public class CustomerDAOImp implements CustomerDAO
 	
 	
 	@Override
-	@Transactional
 	public List<Customer> getCustomers()
 	{
 		//get sessoin
