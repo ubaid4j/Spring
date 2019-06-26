@@ -57,8 +57,20 @@ public class CustomerDAOImp implements CustomerDAO
 		//create session
 		Session session = sesssionFactory.getCurrentSession();
 		
-		//save customer
-		session.save(customer);
+		//save or update on 
+		//if id is available then update
+		//if id is empty then insert
+		session.saveOrUpdate(customer);
+	}
+
+
+	@Override
+	public Customer getCustomer(int id)
+	{
+		//session
+		Session session = sesssionFactory.getCurrentSession();
+	
+		return session.get(Customer.class, id);
 	}
 
 }

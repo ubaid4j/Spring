@@ -34,6 +34,17 @@
 				<li>And then return redirect <strong>"redirect:path"</strong></li>				
 			</ol>
 		</li>
+		<li><h3>Update Customer</h3>
+			<ol>
+				<li>In JSP file, create a update link and store varaible from: <strong>c:url -> c:param</strong></li>
+				<li>The get method will retrieve the customer from given id and then </li>
+				<li>add this customer into the same add customer form</li>
+				<li>in add form, we will add <strong>form:hidden path="id"</strong> which tells: </li>
+				<li>if id field is empty then insert if id is available then update customer</li>
+				<li>the action remain same for update</li>
+				<li>only change in DAO, change .save to .saveOrUpdate</li>
+			<ol>
+		</li>
 	</ol>
 	
 </ol>

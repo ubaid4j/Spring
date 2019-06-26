@@ -21,45 +21,49 @@
 		<div id="app">
 			<form:form action="addNewCustomer" modelAttribute="customer" method="POST">
 
-			<div class="ui five column grid">
-				 <div class="row">
-    				<div class="one wide column ui label">
-    					<label>First Name:</label>
-    				</div>
-    				<div class="four wide column ui input">
-    					<form:input path="firstName"/>
-    				</div>
-				  </div>
-				  
-				 <div class="row">
-    				<div class="one wide column ui label">
-    					<label>Last Name:</label>
-    				</div>
-    				<div class="four wide column ui input">
-    					<form:input path="lastName"/>
-    				</div>
-				  </div>
+				<!-- very crucial if this field will empty then customer will be inserted 
+				and if id is available then it will updated	 -->
+				<form:hidden path="id"/>
 
-
-				 <div class="row">
-    				<div class="one wide column ui label">
-    					<label>Email:</label>
-    				</div>
-    				<div class="four wide column ui input">
-    					<form:input path="email"/>
-    				</div>
-				  </div>
-
-				 <div class="row">
-    				<div class="one wide column">
-    				</div>
-    				<div class="four wide column ui input">
-						<input type="submit">
-    				</div>
-				  </div>
-
-				 				  
-			</div>
+				<div class="ui five column grid">
+					 <div class="row">
+	    				<div class="one wide column ui label">
+	    					<label>First Name:</label>
+	    				</div>
+	    				<div class="four wide column ui input">
+	    					<form:input path="firstName"/>
+	    				</div>
+					  </div>
+					  
+					 <div class="row">
+	    				<div class="one wide column ui label">
+	    					<label>Last Name:</label>
+	    				</div>
+	    				<div class="four wide column ui input">
+	    					<form:input path="lastName"/>
+	    				</div>
+					  </div>
+	
+	
+					 <div class="row">
+	    				<div class="one wide column ui label">
+	    					<label>Email:</label>
+	    				</div>
+	    				<div class="four wide column ui input">
+	    					<form:input path="email"/>
+	    				</div>
+					  </div>
+	
+					 <div class="row">
+	    				<div class="one wide column">
+	    				</div>
+	    				<div class="four wide column ui input">
+							<input type="submit">
+	    				</div>
+					  </div>
+	
+					 				  
+				</div>
 
 			</form:form>
 
