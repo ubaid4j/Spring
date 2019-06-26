@@ -16,6 +16,10 @@
 		
 		<div id="container">
 			<div id="table_content">
+			
+				<div id="new_customer">
+					<input type="button" value="Add New Customer" onclick="window.location.href='${pageContext.request.contextPath}/customer/addNewCustomer'">
+				</div>
 				<table>
 					<thead>
 						<tr>

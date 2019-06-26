@@ -14,6 +14,7 @@
 			<ol>
 				<li>@Repository: subclass of @Component</li>
 				<li>@Transactional: it create and end transaction automatically</li>
+				<li>@GetMapping and @PostMapping</li>
 			</ol>
 		</li>
 	</ol>
@@ -23,6 +24,14 @@
 			<ol>
 				<li>@Service: subclass of @Component, tells spring to scan as a service [Facade Design]</li>
 				<li>@Transactional: Move it from DAO to Service</li>
+			</ol>
+		</li>
+		<li>Save to Database Added
+			<ol>
+				<li>Create method in DAO to save in the database</li>
+				<li>Same method in the Service</li>
+				<li>@PostMapping to save the customer</li>
+				<li>And then return redirect <strong>"redirect:path"</strong></li>				
 			</ol>
 		</li>
 	</ol>
