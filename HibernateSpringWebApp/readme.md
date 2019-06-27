@@ -20,13 +20,13 @@
 	</ol>
 	<h3>customer-list.jsp -> Controller -> Service ->  DAO</h3>
 	<ol>
-		<li>Service Layer Added
+		<li><h3>Service Layer Added</h3>
 			<ol>
 				<li>@Service: subclass of @Component, tells spring to scan as a service [Facade Design]</li>
 				<li>@Transactional: Move it from DAO to Service</li>
 			</ol>
 		</li>
-		<li>Save to Database Added
+		<li><h3>Save to Database Added</h3>
 			<ol>
 				<li>Create method in DAO to save in the database</li>
 				<li>Same method in the Service</li>
@@ -43,13 +43,12 @@
 				<li>if id field is empty then insert if id is available then update customer</li>
 				<li>the action remain same for update</li>
 				<li>only change in DAO, change .save to .saveOrUpdate</li>
-			<ol>
+			</ol>
 		</li>
-		<li><h3>Update Customer</h3>
+		<li><h3>Delete Customer</h3>
 		<ol>
 			<li>Simple add <strong>c:url -&gt; c:param and add it in delete link</strong></li>
-			<li>Update datele method in DAO, two options <strong>create query </strong> or <strong>get object and delete</strong></li>
-		</ol>
+			<li>Update datele method in DAO, two options <strong>create query </strong> or <strong>get object and 			delete</strong></li>
+		</ol>	
 	</ol>
-	
 </ol>
