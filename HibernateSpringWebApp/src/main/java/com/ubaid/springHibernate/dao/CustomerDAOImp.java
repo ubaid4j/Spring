@@ -73,4 +73,19 @@ public class CustomerDAOImp implements CustomerDAO
 		return session.get(Customer.class, id);
 	}
 
+
+	@Override
+	public void deleteCustomer(int customerId)
+	{
+		//session
+		Session session = sesssionFactory.getCurrentSession();
+		
+		Customer customer = session.get(Customer.class, customerId);
+		session.delete(customer);
+		
+//		Query<?> query = session.createQuery("delete from Customer where id = :id");
+//		query.setParameter("id", customerId);
+//		query.executeUpdate();
+	}
+
 }

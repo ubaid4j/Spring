@@ -2,8 +2,6 @@ package com.ubaid.springHibernate.controller;
 
 import java.util.List;
 
-import javax.persistence.Id;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -65,6 +63,14 @@ public class CustomerController
 		Customer customer = customerService.getCustomer(id);
 		model.addAttribute("customer", customer);
 		return "add_customer";
+	}
+	
+	@GetMapping("/delete")
+	public String deleteCustomer(@RequestParam("customerId") int customerId)
+	{
+		customerService.deleteCustomer(customerId);
+		
+		return "redirect:/customer/list";
 	}
 		
 }
