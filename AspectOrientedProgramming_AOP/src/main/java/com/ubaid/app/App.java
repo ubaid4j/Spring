@@ -4,6 +4,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.ubaid.app.aop.JavaConfig;
 import com.ubaid.app.aop.dao.CustomerDAO;
+import com.ubaid.app.aop.dao.MemberShipDAO;
+import com.ubaid.app.aop.entity.Account;
 
 public class App
 {
@@ -13,12 +15,13 @@ public class App
 				new AnnotationConfigApplicationContext(JavaConfig.class);
 		
 		CustomerDAO customerDAO = context.getBean("customerDAO", CustomerDAO.class);
+		MemberShipDAO memberShipDAO = context.getBean("memberShipDAO", MemberShipDAO.class);
 		
-		customerDAO.addAccount();
+		customerDAO.addAccount(new Account(), true, 50000);
 
-		System.out.println("\n\nAgain---------------\n\n");
+		memberShipDAO.addAccount();
+		memberShipDAO.addMemberShip(5000d);
 		
-		customerDAO.addAccount();
 		
 		context.close();
 	}
