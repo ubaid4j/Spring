@@ -3,6 +3,7 @@ package com.ubaid.app.aop.logging;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -68,14 +69,29 @@ public class LoggingAspect
 	/**
 	 * any method of any parameters and any return type
 	 */
-	@Before("execution(* *(..))")
+//	@Before("execution(* *(..))")
 
 	/**
 	 * any method of any parameters in the com.ubaid.app.aop.dao package
 	 */
 //	@Before("execution(* com.ubaid.app.aop.dao.*.*(..))")
+
+	/**
+	 * point cut declaration
+	 */
+	@Pointcut("execution(public * com.ubaid.app.aop.dao.*.*(..))")
+	public void forDAOPackage() {}
+	
+	
+	@Before("forDAOPackage()")
 	public void adviceNumber1(JoinPoint joinPoint)
 	{
 		System.out.println("\n\n=======> Logging working before addAccount method called");
+	}
+	
+	@Before("forDAOPackage()")
+	public void adviceNumber2(JoinPoint joinPoint)
+	{
+		System.out.println("\n\n======> API Analytics: Doing Analyzing");
 	}
 }

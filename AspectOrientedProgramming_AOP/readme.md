@@ -24,4 +24,10 @@
 	<li>
 		<h3>For clarification see: <strong>com.ubaid.app.aop.logging.LoggingAspect.java</strong></h3>
 	</li>
+	<li>PointCut expression declaration</li>
+	<ol>
+		<li>So far, we have hard coded the point cut expression, but we can make them reuse able using <strong> 		@PointCut </strong>annotation</li>
+		<li>To declare point cut expression, the format is: <strong>@PointCut("expression")public void method_name() 		{}</strong></li>
+		<li>and we use it as normal using <strong>@Before("method_name")</strong></li>
+	</ol>
 </ol>
