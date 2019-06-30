@@ -22,7 +22,16 @@ public class App
 		accountDAO.addAccount(new Account("Atif Ayub", "Silver"));
 		
 		
-		List<Account> accounts = accountDAO.findAccounts();
+		List<Account> accounts = null;
+				
+		try
+		{
+			accounts = accountDAO.findAccounts(true);			
+		}
+		catch(Exception exp)
+		{
+			System.out.println(exp);
+		}
 		
 		System.out.println("App: " + accounts);
 		

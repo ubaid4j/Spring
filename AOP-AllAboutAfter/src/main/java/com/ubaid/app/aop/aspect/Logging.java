@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
@@ -31,6 +32,13 @@ public class Logging extends AspectInterface
 		convertToUpperCaseAccountTitle(accountLists);
 	}
 
+	@AfterThrowing(pointcut="findAccount()", throwing="exp")
+	public void loggingAfterThrowing(JoinPoint joinPoint, Throwable exp)
+	{
+		System.out.println("\n\n====>In AfterThrowing Logging: " + exp);
+	}
+	
+	
 	private void convertToUpperCaseAccountTitle(List<Account> accountLists)
 	{
 		for(Account account : accountLists)

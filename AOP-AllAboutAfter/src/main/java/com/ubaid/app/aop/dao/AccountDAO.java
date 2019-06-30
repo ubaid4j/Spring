@@ -14,13 +14,27 @@ public class AccountDAO
 	private List<Account> accounts;
 	
 	public void addAccount(Account account)
-	{
+	{		
 		accounts.add(account);
 	}
 	
-	public List<Account> findAccounts()
+	public List<Account> findAccounts(boolean flag)
 	{
 		System.out.println("Finding Account");
+		try
+		{
+			//throwing exception
+			if(flag)
+			{
+				throw new RuntimeException("Exception is occured due to connection error\nSolve Connection to database");
+			}
+			
+		}
+		catch(Exception exp)
+		{
+			throw exp;
+		}
+
 		return accounts;
 	}
 	
