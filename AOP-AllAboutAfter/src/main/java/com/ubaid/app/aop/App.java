@@ -16,7 +16,7 @@ public class App
 			= new AnnotationConfigApplicationContext(Config.class);
 		
 		AccountDAO accountDAO = context.getBean("accountDAO", AccountDAO.class);
-		
+	
 		accountDAO.addAccount(new Account("Ubaid ur Rehman", "Platinum"));
 		accountDAO.addAccount(new Account("Attiq ur Rehman", "Golg"));
 		accountDAO.addAccount(new Account("Atif Ayub", "Silver"));
