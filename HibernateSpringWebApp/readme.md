@@ -52,3 +52,12 @@
 		</ol>	
 	</ol>
 </ol>
+
+
+<h3 align="center">Adding AOP Logging Support</h3>
+<ol style="padding-left: 120px">
+	<li>As this is XML bases configured</li>
+	<li>add XMLNs for AOP and enable auto proxy</li>
+	<li>add jaspect jar file in maven dependency as Spring AOP depend on jaspect</li>
+	<li>The logging implementations are here <strong>com.ubaid.springHibernate.aop.LoggingImp</strong></li>
+</ol>

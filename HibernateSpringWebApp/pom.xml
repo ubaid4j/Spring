@@ -118,6 +118,14 @@
     		<version>5.1.7.RELEASE</version>
 		</dependency>
 
+		<!-- jaspect for spring aspect -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>1.9.4</version>
+		</dependency>
+
+
 		<!-- spring aspects -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
