@@ -17,3 +17,7 @@
 		</ol>
 	</ol>
 </ol>
+<ol>
+	<h3>POX.xml</h3>
+	<li>Insert maven-war-plugin in the pom file</li>
+</ol>
