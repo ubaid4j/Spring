@@ -344,8 +344,44 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>3.2.3</version>					
 				</plugin>
+
+			<!-- mvn clean compile assembly:single -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+		
+					<archive>
+						<manifest>
+							<mainClass>com.ubaid.app.App</mainClass>
+						</manifest>
+					</archive>
+		
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+	
+					<executions>
+						<execution>
+		
+							<phase>package</phase>
+		
+							<goals>
+								<goal>single</goal>
+							</goals>
+						</execution>
+					</executions>
+			
+				</configuration>
+			</plugin>
+
+
 			</plugins>
 		</pluginManagement>
+		
+		<plugins>
+		</plugins>
+		
+		
 	</build>
  
 	
