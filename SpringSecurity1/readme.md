@@ -14,6 +14,9 @@
 		<ol>
 			<h5>Notes About Security Cofig</h5>
 			<li>Do not call super.configure() in the configure method</li>
+			<li>Import this Security Config class in the app Config class uisng @import annotation</li>
+			<li>Security Init should be scanned first than App Init [Hint: Use @Order annotation]</li>
+			<li>If we lower the order of Security Init then our app bypass the default login page</li>
 		</ol>
 	</ol>
 </ol>
