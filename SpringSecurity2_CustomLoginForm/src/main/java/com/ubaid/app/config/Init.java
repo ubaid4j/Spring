@@ -3,7 +3,7 @@ package com.ubaid.app.config;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-@Order(2)
+@Order(-110)
 public class Init extends AbstractAnnotationConfigDispatcherServletInitializer
 {
 
