@@ -38,6 +38,11 @@
 				<span class="login100-form-title p-b-41">
 					Account Login
 				</span>
+				<span class="login100-form-title p-b-25" >
+					<c:if test="${param.error != null }">
+						<p id="error">Please Enter Correct Password or User-name</p>
+					</c:if>
+				</span>
 				<form:form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="loginProcessing">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
