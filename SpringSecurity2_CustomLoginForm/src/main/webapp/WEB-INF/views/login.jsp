@@ -39,10 +39,19 @@
 					Account Login
 				</span>
 				<span class="login100-form-title p-b-25" >
+				
+				<!-- Checking if error param is present -->
 					<c:if test="${param.error != null }">
 						<p id="error">Please Enter Correct Password or User-name</p>
 					</c:if>
+
+				<!-- Checking if logout param is present -->
+					<c:if test="${param.logout != null }">
+						<p id="info">You have been logout</p>
+					</c:if>
 				</span>
+				
+				
 				<form:form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="loginProcessing">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">

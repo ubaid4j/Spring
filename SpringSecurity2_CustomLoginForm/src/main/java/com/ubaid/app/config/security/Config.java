@@ -35,7 +35,10 @@ public class Config extends WebSecurityConfigurerAdapter
 		.formLogin()
 		.loginPage("/login")
 		.loginProcessingUrl("/loginProcessing")
-		.permitAll();		
+		.permitAll()
+		.and()
+		.logout()
+		.permitAll();
 		
 	}
 	

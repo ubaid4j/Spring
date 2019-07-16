@@ -9,4 +9,5 @@
 	</ol>
 	<li>Structure will be src/main/webapp/WEB-INF and src/main/webapp/resources</li>
 	<li>For displaying error use c:if test=""</li>
+	<li><strong>Logout: </strong>For logout simple add and logout permit all in the security config and defualt url is /logout</li>
 </ol>
