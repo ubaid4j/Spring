@@ -2,4 +2,5 @@
 /.settings
 .classpath
 .project
-/SpringSecurity2_CustomLoginForm/src/main/webapp/resources/css/
+/src/main/webapp/resources/css/app.css
+/src/main/webapp/resources/css/util.css
