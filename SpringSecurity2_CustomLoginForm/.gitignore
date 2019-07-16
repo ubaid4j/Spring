@@ -2,5 +2,4 @@
 /.settings
 .classpath
 .project
-/src/main/webapp/resources/css/app.css
 /src/main/webapp/resources/css/util.css
