@@ -1,0 +1,16 @@
+{
+    "id" : 147106,
+    "firstName" : "Ubaid ur",
+    "lastName" : "Rehman",
+    "active" : true,
+    "address" : {
+    	
+    	"street" : "Mac110",
+    	"city" : "Islamabad",
+    	"state" : "Federal",
+    	"zip" : "44000",
+    	"country" : "Pakistan"},
+    "languages" : ["Java", "C++", "Python", "C#"],
+    "company" : "Rehman. INC"
+    
+}
