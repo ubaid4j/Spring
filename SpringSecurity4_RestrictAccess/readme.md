@@ -1,6 +1,6 @@
 <h1>Role Based Access</h1>
 <ol>
-	<li>For simple Constructing Custom Login see <strong>SpringSecurity4_RestrictAccess</strong></li>
+	<li>For simple Constructing Custom Login see <strong>SpringSecurity2_CustomeLoginForm</strong></li>
 	<li>So, we can check name of user and its role by tag sec:authentication property=principal.username</li>
 	<li>and role by sec:authentication property=principal.authorities</li>
 	<ol>
