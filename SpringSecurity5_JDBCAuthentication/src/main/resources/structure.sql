@@ -1,6 +1,8 @@
 drop database if exists hello1;
 create database if not exists hello1;
 use hello1;
+
+/**Store Passwords like {id}password id can be noop or bcrypt*/
 create table users
 (
 	username varchar(50) primary key,
