@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ubaid.app.entity.Student;
+import com.ubaid.app.exception.StudentNotFoundException;
 
 @RestController
 @RequestMapping("/api")
@@ -39,6 +40,13 @@ public class StudentController
 	@GetMapping("/students/{id}")
 	public Student getStudent(@PathVariable int id)
 	{
-		return students.get(id);
-	}
+		try
+		{
+			return students.get(id);			
+		}
+		catch(IndexOutOfBoundsException exp)
+		{
+			throw new StudentNotFoundException("The student of id " + id + " is not found");
+		}
+	}	
 }

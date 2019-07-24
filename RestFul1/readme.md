@@ -10,3 +10,13 @@
 	<li>In @GetMapping("/student/{id})" and</li>
 	<li>and in the parameters @PathVariable type id</li>
 </ol>
+
+<ol>
+	<h2>Exception Handling Local</h2>
+	<li>we use <strong>@ExceptionHandler</strong> on method having signature <strong>public ResponseEntity<T> handle(Exception Type) return new ResponseEntity<T>(body, header)</strong></li>
+</ol>
+
+<ol>
+	<h2>Global Exception Handling</h2>
+	<li>We use <strong>@ControllerAdvice on the class </strong> and then write exception handle methods as shown above</li>
+</ol>
