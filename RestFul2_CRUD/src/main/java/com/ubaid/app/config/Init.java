@@ -1,7 +1,9 @@
 package com.ubaid.app.config;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+@Order(-109)
 public class Init extends AbstractAnnotationConfigDispatcherServletInitializer
 {
 
