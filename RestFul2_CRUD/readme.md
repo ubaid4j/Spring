@@ -38,6 +38,12 @@
 	<li>We Use @DeleteMapping annotation and @PathVariable annotation in the deletes's Parameter to convert path variable to int or any type</li>
 </ol>
 
+<ol>
+	<h2>Security </h2>
+	<li>For Security see SpringSecurity1 and SpringSecurity5_JDBC Authentication</li>
+</ol>
+
+
 
 <ol>
 	<h5>Notes: </h5>
