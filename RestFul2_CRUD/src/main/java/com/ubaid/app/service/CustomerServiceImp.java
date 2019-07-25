@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ubaid.app.dao.CustomerDAOImp;
+import com.ubaid.app.dao.CustomerDAOI;
 import com.ubaid.app.entity.Customer;
 
 @Service
 public class CustomerServiceImp implements CustomerServiceI {
 
 	@Autowired
-	CustomerDAOImp dao;
+	CustomerDAOI dao;
 	
 	@Override
 	@Transactional
@@ -31,9 +31,9 @@ public class CustomerServiceImp implements CustomerServiceI {
 
 	@Override
 	@Transactional
-	public void saveCustomer(Customer customer)
+	public Customer saveCustomer(Customer customer)
 	{
-		dao.saveCustomer(customer);
+		return dao.saveCustomer(customer);
 	}
 
 	@Override
