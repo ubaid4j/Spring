@@ -37,10 +37,11 @@ public class CustomerDAOImp implements CustomerDAOI
 	}
 
 	@Override
-	public void saveCustomer(Customer customer)
+	public Customer saveCustomer(Customer customer)
 	{
 		Session session = sessionFactory.getCurrentSession();
 		session.saveOrUpdate(customer);
+		return customer;
 	}
 
 	@Override

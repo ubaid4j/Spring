@@ -35,4 +35,10 @@ public class CustomerRestController
 			throw new CustomerNotFoundException("The customer of id " + customerId + " is not found");
 		return custSer.getCustomer(customerId);
 	}
+	
+	public Customer addCustomer()
+	{
+		
+		return null;
+	}
 }
