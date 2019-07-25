@@ -15,8 +15,27 @@
 
 
 <ol>
+	<h2>Getting a Customer</h2>
+	<li>We Use @GetMapping annotation and @PathVariable annotation in the get Parameter to convert the path variable  to int or any other type</li>
+	<li>we set 0 as default id in this method</li>
+</ol>
+
+
+<ol>
 	<h2>Adding a Customer</h2>
-	<li>We Use @BodyRequest in the add Parameter to convert the JSON data to POJO</li>
+	<li>We Use @PostMapping annotation and @BodyRequest annotation in the add Parameter to convert the JSON data to POJO</li>
+	<li>we set 0 as default id in this method</li>
+</ol>
+
+<ol>
+	<h2>Updating a Customer</h2>
+	<li>We Use @PutMapping annotation and @BodyRequest in the updates's Parameter to convert the JSON data to POJO</li>
+	<li>We do not set 0 in this method becuase it is going to update</li>
+</ol>
+
+<ol>
+	<h2>Delete a Customer</h2>
+	<li>We Use @DeleteMapping annotation and @PathVariable annotation in the deletes's Parameter to convert path variable to int or any type</li>
 </ol>
 
 
