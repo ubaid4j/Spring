@@ -31,7 +31,7 @@ public class CustomerDAOImp implements CustomerDAOI
 	{
 		Session session = sessionFactory.getCurrentSession();
 		
-		Query<Customer> query = session.createQuery("from customer order by lastName", Customer.class);
+		Query<Customer> query = session.createQuery("from Customer order by lastName", Customer.class);
 	
 		return query.getResultList();
 	}
