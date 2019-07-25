@@ -4,7 +4,7 @@ use rest2crud;
 
 create table customer 
 (
-	id int primary key,
+	id int not null auto_increment primary key,
     first_name varchar(255),
     last_name varchar(255),
     email varchar(255)
@@ -15,3 +15,6 @@ insert into customer values
 (2, 'attiq', 'rehman', 'arehman.bese16seecs@seecs.edu.pk'),
 (3, 'saqib', 'rehman', 'srehman.bese16seecs@seecs.edu.pk'),
 (4, 'shafiq', 'rehman', 'sfrehman.bese16seecs@seecs.edu.pk');
+
+
+select * from customer;
