@@ -15,4 +15,10 @@ public class HomeController
 	{
 		return "The Current time on server is " + LocalDateTime.now();
 	}
+	
+	@GetMapping("/workout")
+	public String workOut()
+	{
+		return "Get daily workout at the rate of 100 push ups";
+	}
 }
