@@ -48,4 +48,5 @@
 <ol>
 	<h5>Notes: </h5>
 	<li>Use <strong>@EnableTransactionManagement</strong> to enable HIBERNATE transaction in Config class</li>
+	<li>For Spring Security this version 5.1.5.RELEASE use bycript hash starting from $2a as they have only $2a compile pattern for now</li>
 </ol>

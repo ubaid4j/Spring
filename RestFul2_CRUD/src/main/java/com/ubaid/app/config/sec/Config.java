@@ -1,5 +1,8 @@
 package com.ubaid.app.config.sec;
 
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,17 +19,25 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
 public class Config extends WebSecurityConfigurerAdapter
 {
 
+	@Autowired
+	DataSource ds;
+	
+	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception
 	{
-		//TODO will change it later
-		@SuppressWarnings("deprecation")
-		UserBuilder builder = User.withDefaultPasswordEncoder();
+
+		//in memory password storage
+//		@SuppressWarnings("deprecation")
+//		UserBuilder builder = User.withDefaultPasswordEncoder();
+//		
+//		auth
+//			.inMemoryAuthentication().withUser(builder.username("ubaid").password("1234").roles("ADMIN").build())
+//									.withUser(builder.username("attiq").password("123").roles("EMPLOYEE").build())
+//									.withUser(builder.username("hajar").password("1234").roles("MANAGER").build());
 		
-		auth
-			.inMemoryAuthentication().withUser(builder.username("ubaid").password("1234").roles("ADMIN").build())
-									.withUser(builder.username("attiq").password("123").roles("EMPLOYEE").build())
-									.withUser(builder.username("hajar").password("1234").roles("MANAGER").build());
+		
+		auth.jdbcAuthentication().dataSource(ds);
 	}
 
 	@Override
