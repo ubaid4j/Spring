@@ -16,7 +16,7 @@
 		<maven.compiler.target>12</maven.compiler.target>
 		
 		
-		<spring.version>5.2.4.RELEASE</spring.version>
+		<spring.version>5.3.19</spring.version>
 		<hibernatecore.version>5.4.3.Final</hibernatecore.version>
 		<hibernatevalidator.versoin>6.1.1.Final</hibernatevalidator.versoin>
 		<jdbc.version>8.0.16</jdbc.version>
